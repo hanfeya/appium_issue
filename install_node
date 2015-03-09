@@ -1,0 +1,33 @@
+安装node时候遇到以下问题
+b407@b407-ThinkPad-T400:/$ brew install node
+==> Installing node dependency: pkg-config
+==> Downloading http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
+######################################################################## 100.0%
+Error: SHA256 mismatch
+Expected: 6b6eb31c6ec4421174578652c7e141fdaae2dabad1021f420d8713206ac1f845
+Actual: f1a869b4adf119e7163db5ed218676504d0fc2a7c4f9b032da8c41625c02e185
+Archive: /home/b407/.cache/Homebrew/pkg-config-0.28.tar.gz
+To retry an incomplete download, remove the file above.
+
+再网上查的解决方案是update brew：
+brew updae
+rm /home/b407/.cache/Homebrew/pkg-config-0.28.tar.gz
+
+再安装依然报相同的错，最后这样解决的
+
+brew fetch node --force
+
+==> Downloading https://nodejs.org/dist/v0.12.0/node-v0.12.0.tar.gz
+######################################################################## 100.0%
+Downloaded to: /home/b407/.cache/Homebrew/node-0.12.0.tar.gz
+SHA1: d08810034d170c19759cb38bfc9442ab6b0ebc7a
+SHA256: 9700e23af4e9b3643af48cef5f2ad20a1331ff531a12154eef2bfb0bb1682e32
+Resource: npm
+==> Downloading https://registry.npmjs.org/npm/-/npm-2.5.1.tgz
+######################################################################## 100.0%
+Downloaded to: /home/b407/.cache/Homebrew/node--npm-2.5.1.tgz
+SHA1: 23e4b0fdd1ffced7d835780e692a9e5a0125bb02
+SHA256: 69c7a2f2d3553465c8a3cd6d0159c82feaaacca2de3ad1dcfa414e8cb4b6c781
+
+然后在运行 brew install node
+就安装成功了
