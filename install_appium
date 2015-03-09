@@ -1,0 +1,27 @@
+npm install -g appium 安装appium的时候遇到权限问题。
+
+npm ERR! Linux 3.11.0-26-generic
+npm ERR! argv "node" "/home/b407/.linuxbrew/bin/npm" "install" "-g" "appium"
+npm ERR! node v0.12.0
+npm ERR! npm  v2.5.1
+npm ERR! path /home/b407/.npm/_git-remotes/_templates
+npm ERR! code EACCES
+npm ERR! errno -13
+
+npm ERR! Error: EACCES, mkdir '/home/b407/.npm/_git-remotes/_templates'
+npm ERR!     at Error (native)
+npm ERR!  { [Error: EACCES, mkdir '/home/b407/.npm/_git-remotes/_templates']
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   path: '/home/b407/.npm/_git-remotes/_templates',
+npm ERR!   parent: 'gulp-traceur' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/b407/npm-debug.log
+
+解决方案：
+sudo chown -R $USER /home/b407/.npm/
+ 然后再安装，问题得以解决
+ 
