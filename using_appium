@@ -1,0 +1,2 @@
+执行python脚本的时候遇到的问题：
+WebDriverException: Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
