@@ -1,0 +1,13 @@
+Method 1:
+pip install Appium-Python-Client
+Method 2:
+download Appium-Python-Client
+reasle package
+tar -xvf Appium-Python-Client
+cd到解压目录
+python setup.py install
+Method 3
+install form github
+git clone git@github.com:appium/python-client.git
+cd python-client
+python setup.py install
