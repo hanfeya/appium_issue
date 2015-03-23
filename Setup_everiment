@@ -2,7 +2,7 @@ Without the method of appium offical provide.
 Install nodejs using homebrew and install appium
 (1)sudo apt-get install ruby11.8
 (2)install linuxbrew
-ruby -e "(wget -o- https://raw.github.com/Homebrew/linuxbrew/go/install)"
+ruby -e "$(wget -O- https://raw.github.com/Homebrew/linuxbrew/go/install)"
 (3)Add brew to path
   export PATH="$HOME/.linuxbrew/bin:$PATH"
   export LD_LIBARARY_PATH="$Home/.linuxbrew/lib:$LD_LIBRARY_PATH"
