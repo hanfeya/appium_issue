@@ -10,3 +10,9 @@ ruby -e "$(wget -O- https://raw.github.com/Homebrew/linuxbrew/go/install)"
 brew install node
 (5)Install appium globally
 npm install -g appium
+
+
+
+Reference URL:
+https://coderwall.com/p/rcvkrq/install-nodejs-using-homebrew-and-install-appium
+http://stackoverflow.com/questions/22152162/npm-cannot-install-dependencies-attempt-to-unlock-something-which-hasnt-been
